@@ -1,12 +1,31 @@
 .numbers{
   display: grid;
-  border: 1px solid black;
   justify-content: center;
   grid-template-columns: repeat(4, 75px);
   padding: 30px;
   row-gap: 5px;
 }
+.numpad{border: 3px solid rgb(82 9 255);
+}
 
+
+.clearance{
+  display:flex;
+  justify-content: center;
+  gap: 39px;
+  padding-top: 10px;
+}
+.sp{
+  display: flex;
+  height: auto;
+  width: 124px;
+  padding-inline: 56px;
+ justify-content: center;
+ align-items: center;
+ font-size: 30px;
+ color: rgb(147 0 255);
+ background-color: black;
+}
 .ind{
   display: flex;
   padding: 28px;
@@ -16,9 +35,17 @@
   margin-right: auto;
   align-items: center;
   justify-content: center;
+  font-size: -webkit-xxx-large;
+  color: rgb(147 0 255);
+  background-color: black;
+}
+#result{
+  padding-right: 50px;
+  font-size: -webkit-xxx-large;
 }
 body{
-    color: yellowgreen;
+    color: rgb(147 0 255);
+    background-color:black;
 }
 .container{
   padding: 50px;
@@ -26,9 +53,9 @@ body{
   justify-content: center;
 }
 .display{
-  border:1px solid black;
+  border:3px solid rgb(82 9 255);
   padding:20px; 
-  width: 335.938px;
+  width: 331.938px;
   text-align: right;
   word-wrap: break-word;
 }
@@ -39,6 +66,8 @@ body{
 h1{
   display: flex;
   justify-content: center;
+  font-size: xx-large;
+  font-weight: 200;
 }
 
 /*numberBtns.forEach((button)=> button.addEventListener("click", event=>displayNum(button.textContent)));
